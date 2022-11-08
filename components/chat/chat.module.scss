@@ -6,6 +6,9 @@
     background-color: brown;
     flex: 1;
     display: flex;
+    @media (max-width: 768px) {
+      flex: 2.5;
+    }
     .friends__container {
       background-color: #11171c;
       padding: 2rem 1rem;
@@ -36,7 +39,14 @@
       padding: 1em 0;
       color: white;
       button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: aliceblue;
+        font-size: 25px;
+        cursor: pointer;
         width: 60%;
+        border: none;
         border-radius: 10px;
         background-color: rgb(247, 113, 113);
         padding: 0.5rem 1rem;

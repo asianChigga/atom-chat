@@ -9,7 +9,7 @@ import {
 } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
 import { signOut } from "firebase/auth";
-
+import { IoMdArrowRoundBack } from "react-icons/Io";
 import Chatbox from "../chatbox/Chatbox";
 import styles from "./chat.module.scss";
 import { useCollectionData } from "react-firebase-hooks/firestore";
@@ -58,7 +58,9 @@ const Chat = () => {
           ))}
         </div> */}
         <div className={styles.groups__container}>
-          <button onClick={signOutHandler}>sign out</button>
+          <button onClick={signOutHandler}>
+            <IoMdArrowRoundBack className={styles.back} />
+          </button>
         </div>
       </div>
       <div className={styles.chat__container}>
