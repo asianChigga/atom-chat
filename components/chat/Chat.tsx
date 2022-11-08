@@ -8,12 +8,12 @@ import {
   setDoc,
 } from "firebase/firestore";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 import { signOut } from "firebase/auth";
-import { IoMdArrowRoundBack } from "react-icons/Io";
+
 import Chatbox from "../chatbox/Chatbox";
 import styles from "./chat.module.scss";
 import { useCollectionData } from "react-firebase-hooks/firestore";
-
 import { auth, db } from "../../Firebase.util";
 import { UserContext } from "../../context/Context";
 import { useRouter } from "next/router";
@@ -54,7 +54,12 @@ const Chat = () => {
       <div className={styles.chatSideBar__container}>
         <div className={styles.groups__container}>
           <button onClick={signOutHandler}>
-            <IoMdArrowRoundBack className={styles.back} />
+            <Image
+              src="/backArrow.png"
+              alt="go-back"
+              height={20}
+              width={20}
+            ></Image>
           </button>
         </div>
       </div>
