@@ -52,11 +52,6 @@ const Chat = () => {
   return (
     <div className={styles.chatMain__container}>
       <div className={styles.chatSideBar__container}>
-        {/* <div className={styles.friends__container}>
-          {friends.map((friend) => (
-            <div className={styles.friend__container}>{friend}</div>
-          ))}
-        </div> */}
         <div className={styles.groups__container}>
           <button onClick={signOutHandler}>
             <IoMdArrowRoundBack className={styles.back} />
