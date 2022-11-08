@@ -90,7 +90,7 @@ const Sign = () => {
             <CustomButton type="footerBtn">
               <FcGoogle className={styles.googleImg} />
               <p>
-                Don't have an account?
+                Don&apos;t have an account?
                 <span className={styles.signUp}>Sign up</span>
               </p>
             </CustomButton>
