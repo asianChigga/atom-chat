@@ -1,0 +1,41 @@
+.chatbox__container {
+  display: flex;
+  background-color: #ff5c85;
+  gap: 1em;
+  padding: 0.5rem;
+  .logo__container {
+    display: flex;
+    align-items: center;
+    .logo {
+      background-color: blanchedalmond;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+      .imageLo {
+        border-radius: 50%;
+      }
+    }
+  }
+  .data__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    // background-color: aqua;
+
+    //
+    align-items: flex-start;
+    justify-content: center;
+    // background-color: brown;
+    h2 {
+      margin: 0;
+      font-size: 20px;
+      margin-bottom: 16px;
+      color: rgb(8, 2, 2);
+    }
+    p {
+      margin-top: 0;
+      color: rgb(8, 2, 2);
+    }
+  }
+}

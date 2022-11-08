@@ -1,0 +1,21 @@
+.hero__containerParent {
+  background-color: blueviolet;
+  .hero__container {
+    max-width: 1024px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+  }
+  .hero__containerInfo {
+    // background-color: aqua;
+    padding: 1em 0;
+    font-weight: 600;
+    color: aliceblue;
+
+    p {
+      font-weight: 200;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.signIn__containerParent {
+  // background-color: blueviolet;
+  .signIn__container {
+    padding: 2em;
+    max-width: 1024px;
+    margin-inline: auto;
+    display: flex;
+    // background-color: blue;
+    align-items: center;
+    gap: 2em;
+    h1 {
+      margin: 0;
+    }
+    .signIn__imgContainer {
+      display: flex;
+      align-items: center;
+    }
+    .signIn__infoContainer {
+      // background-color: aquamarine;
+      .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        .emailInput {
+          display: flex;
+          flex-direction: column;
+          input {
+            padding: 5px;
+          }
+        }
+        .passwordInput {
+          display: flex;
+          flex-direction: column;
+          input {
+            padding: 5px;
+          }
+        }
+      }
+      .inputFooter {
+        gap: 1em;
+        margin-top: 1em;
+        // background-color: burlywood;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .googleImg {
+          font-size: 20px;
+        }
+        button {
+          border: none;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          color: gray;
+          .signUp {
+            margin-left: 2px;
+            color: gray;
+            &:hover {
+              color: blueviolet;
+              cursor: pointer;
+            }
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

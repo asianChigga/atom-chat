@@ -1,0 +1,93 @@
+.chatMain__container {
+  height: 100vh;
+  display: flex;
+
+  .chatSideBar__container {
+    background-color: brown;
+    flex: 1;
+    display: flex;
+    .friends__container {
+      background-color: #11171c;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .friend__container {
+        background-color: aliceblue;
+        padding: 1em;
+        height: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 15px;
+      }
+    }
+    .groups__container {
+      background-color: #1d2127;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1em 0;
+      color: white;
+      button {
+        width: 60%;
+        border-radius: 10px;
+        background-color: rgb(247, 113, 113);
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  .chat__container {
+    width: 100%;
+    flex: 10;
+    background-color: #11171c;
+    display: flex;
+    flex-direction: column;
+  }
+  .chats {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #11171c;
+    overflow-y: auto;
+    text-align: justify;
+  }
+  .input__container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // background-color: blueviolet;
+    .inputs {
+      display: flex;
+      gap: 5px;
+      // background-color: blue;
+      width: 100%;
+      padding: 0 2rem;
+
+      .inputT {
+        width: 100%;
+        padding: 10px;
+        flex: 10;
+        background-color: #1d2127;
+        border-radius: 10px;
+        border: none;
+        color: white;
+      }
+      .btn {
+        flex: 0.5;
+        border-radius: 10px;
+        background-color: #2de57a;
+        padding: 1rem 1rem;
+        color: rgb(2, 43, 7);
+      }
+    }
+  }
+}
